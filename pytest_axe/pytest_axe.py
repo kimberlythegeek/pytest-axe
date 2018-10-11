@@ -53,9 +53,7 @@ def run_axe(page, context=None, options=None, impact=None):
 
 
 class PytestAxe(Axe):
-    def __init__(
-        self, selenium, script_url=None, context=None, options=None, impact=None
-    ):
+    def __init__(self, selenium, context=None, options=None, impact=None):
         super(PytestAxe, self).__init__(selenium)
         self.context = context
         self.options = options
